@@ -1,0 +1,20 @@
+.test
+{
+    color:red;
+    background-color: pink;
+}
+
+.success
+{
+    color: blue;
+    background-color: green;
+    display: none;
+}
+
+.fail
+{
+    color:yellow;
+    background-color: red;
+    display: block;
+
+}

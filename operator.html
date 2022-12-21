@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <script>
+      function validateAge()
+      {
+        console.log("inside validate function");
+
+        var age=document.getElementById("age").value;
+        console.log(age);
+
+        if(age<=18)
+        {
+          console.log("age less than 18")
+          document.getElementById("fail").style.display="block";
+        }
+        else
+        {
+          console.log("condition true");
+          document.getElementById("success").style.display="block";
+          document.getElementById("fail").style.display="none";
+
+        }
+      }
+      </script>
+  <div class="test">
+    <h2> this is form </h2>   
+  <form>
+    <input type="number" id="age" placeholder="Enter your Age">
+    <button type="submit" onclick="fun1()">click me</button>
+    </form>
+  </div>
+
+  <div id="success" class="success"> 
+    <h1>this is success div </h1>
+
+    </div>
+  <div id="fail" class="fail"> 
+    <h1>this is failed div</h1>
+
+    </div>
+  </body>
+ </html>
+        
